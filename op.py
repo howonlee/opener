@@ -10,7 +10,7 @@ if __name__ == "__main__":
         print "found a ", ext, " file. Trying to open..."
         if ext in ["pdf"]:
             print "opening pdf..."
-            call(["evince", filename])
+            call(["mupdf", filename])
         elif ext in ["jpeg", "jpg", "png"]:
             print "opening picture with feh..."
             call(["feh", filename])
